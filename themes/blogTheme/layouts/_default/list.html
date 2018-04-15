@@ -1,0 +1,22 @@
+{{ define "main" }}
+<!-- Liste de tous les articles de la section en question -->
+<h1 class="mt-4">{{ .Section }}</h1>
+  {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
+  {{ range $paginator.Pages }}
+    <article class="card my-4">
+      <div class="card-body">
+        <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <div class="card-text">{{ .Summary }}</div>
+        {{ if .Truncated }}
+          <!-- Si le résumé (summary) est tronqué, met un lien vers l'article. Sinon n'affiche rien de plus -->
+            <a href="{{ .RelPermalink }}" class="btn btn-primary mt-2">Lire plus...</a>
+        {{ end }}
+      </div>
+      <div class="card-footer">
+          <p class="col-sm-auto my-0 card-text"><small>Dernière modification :  <time datetime="{{ .Lastmod.Format "2006-01-02 15:04" }}">{{ .Lastmod.Format "2006-01-02" }}</time></small></p>
+          <p class="col-sm-auto my-0 card-text"><small>Tps estimé : {{ .ReadingTime }}min</small></p>
+        </div>
+    </article>
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

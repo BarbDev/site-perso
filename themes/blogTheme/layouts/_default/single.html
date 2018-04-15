@@ -1,0 +1,26 @@
+{{ define "title" }}
+<!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example -->
+{{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ if isset .Params "tags" }}
+    <p>Tags : </p>
+    <ul>
+        {{ range .Params.tags }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+{{ end }}
+<p>Section :  {{ .Type }}</p>
+{{ if isset .Params "categories" }}
+    <p>Catégories : </p>
+    <ul>
+        {{ range .Params.categories }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+{{ end }}
+{{ .Content }}
+{{ end }}
+

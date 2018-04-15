@@ -1,0 +1,29 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "blogTheme"
+copyright = "test du copyright"
+
+[params]
+    author = "Tanguy PORET"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[[menu.main]]
+    name = "This is the blog section"
+    title = "blog section"
+    weight = -110
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "Homepage"
+    title = "home"
+    weight = 0
+    url = "/"
+[[menu.main]]
+    name = "Tools"
+    title = "outils"
+    identifier = "outils"
+    url = "/outils/"
