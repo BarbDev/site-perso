@@ -30,6 +30,21 @@ build:
       dev_branches:     "" # optional, default: ""
       basedir:          "" # optional, default: ""
       flags:            "--buildDrafts" # optional, default: ""
+  - samueldebruyn/minify@2.3.0:
+      css:              "true" # optional, default: "true"
+      yui_args:         "" # optional, default: ""
+      png_args:         "-o7 -f4 -strip all" # optional, default: "-o7 -f4 -strip all"
+      ignore_branches:  "" # optional, default: ""
+      js:               "true" # optional, default: "true"
+      threads:          "" # optional, default: ""
+      base_dir:         "public" # optional, default: "public"
+      js_ext:           "js" # optional, default: "js"
+      css_ext:          "css" # optional, default: "css"
+      html:             "true" # optional, default: "true"
+      html_ext:         "html" # optional, default: "html"
+      png:              "true" # optional, default: "true"
+      only_on_branches: "" # optional, default: ""
+      html_args:        "--use-short-doctype --remove-style-link-type-attributes --remove-script-type-attributes --remove-comments --minify-css --minify-js --collapse-whitespace  --conservative-collapse" # optional, default: "--use-short-doctype --remove-style-link-type-attributes --remove-script-type-attributes --remove-comments --minify-css --minify-js --collapse-whitespace  --conservative-collapse"
 deploy:
   steps:
     - install-packages:
