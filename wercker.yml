@@ -30,6 +30,10 @@ build:
       dev_branches:     "" # optional, default: ""
       basedir:          "" # optional, default: ""
       flags:            "--buildDrafts" # optional, default: ""
+  - script:
+      name: installing dependency gnupg
+      code: |
+          apt-get update && apt-get install -my wget gnupg
   - samueldebruyn/minify@2.3.0:
       css:              "true" # optional, default: "true"
       yui_args:         "" # optional, default: ""
