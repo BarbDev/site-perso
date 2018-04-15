@@ -20,7 +20,13 @@ build:
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
-    - arjen/hugo-build:
-      version: "1.29.1"
-      theme: blogTheme
-      flags: --buildDrafts
+  - arjen/hugo-build@1.29.1:
+      prod_branches:    ""
+      dev_flags:        ""
+      config:           ""
+      theme:            "blogTheme"
+      version:          "" # optional, default: "0.36.1"
+      force_install:    "" # optional, default: "false"
+      dev_branches:     "" # optional, default: ""
+      basedir:          "" # optional, default: ""
+      flags:            "--buildDrafts" # optional, default: ""
