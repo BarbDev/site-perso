@@ -36,5 +36,4 @@ deploy:
         packages: git ssh-client
     - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN_PUBLIC
-        domain: https://barbdev.github.io/site-perso/
         basedir: public
