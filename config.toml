@@ -1,8 +1,8 @@
 baseURL = "https://barbdev.github.io/site-perso/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "fr"
+title = "Site personnel"
 theme = "blogTheme"
-copyright = "test du copyright"
+copyright = "Tous droits réservés - Copyright "
 
 [params]
     author = "Tanguy PORET"
@@ -12,18 +12,19 @@ copyright = "test du copyright"
   page = ["HTML"]
 
 [[menu.main]]
-    name = "This is the blog section"
-    title = "blog section"
-    weight = -110
+    name = "Blog"
+    title = "Blog"
+    weight = 50
     identifier = "blog"
     url = "/blog/"
 [[menu.main]]
-    name = "Homepage"
-    title = "home"
-    weight = 0
+    name = "Accueil"
+    title = "Accueil"
+    weight = -1
     url = "/"
 [[menu.main]]
-    name = "Tools"
-    title = "outils"
+    name = "Outils"
+    title = "Outils"
     identifier = "outils"
     url = "/outils/"
+    weight = 0

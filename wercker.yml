@@ -29,7 +29,7 @@ build:
       force_install:    "" # optional, default: "false"
       dev_branches:     "" # optional, default: ""
       basedir:          "" # optional, default: ""
-      flags:            "--buildDrafts" # optional, default: ""
+      flags:            "" # optional, default: ""
 minify:
   - script:
       name: installing dependency gnupg
