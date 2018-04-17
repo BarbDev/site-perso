@@ -1,5 +1,6 @@
 baseURL = "https://barbdev.github.io/site-perso/"
 languageCode = "fr"
+defaultContentLanguage = "fr"
 title = "Site personnel"
 theme = "blogTheme"
 copyright = "Tous droits réservés - Copyright "
