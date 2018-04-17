@@ -30,6 +30,7 @@ build:
       dev_branches:     "" # optional, default: ""
       basedir:          "" # optional, default: ""
       flags:            "--buildDrafts" # optional, default: ""
+minify:
   - script:
       name: installing dependency gnupg
       code: |
