@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117747891-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117747891-1');
+    </script>
     <meta charset="utf-8">
     <meta name="google-site-verification" content="k78xGP4xd5Lm4Xv_pVQAYHOUz6nK7GyR6kK1lT3_LXc" />
     <title>
       {{ block "title" . }}
-        <!-- Blocks may include default content. -->
         {{ .Site.Title }}
       {{ end }}
     </title>
