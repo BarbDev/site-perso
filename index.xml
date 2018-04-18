@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accueil on Site personnel</title>
+    <link>https://barbdev.github.io/site-perso/</link>
+    <description>Recent content in Accueil on Site personnel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>Tous droits réservés - Copyright </copyright>
+    <lastBuildDate>Tue, 17 Apr 2018 11:16:05 +0200</lastBuildDate>
+    
+	<atom:link href="https://barbdev.github.io/site-perso/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ouverture</title>
+      <link>https://barbdev.github.io/site-perso/blog/ouverture/</link>
+      <pubDate>Tue, 17 Apr 2018 11:16:05 +0200</pubDate>
+      
+      <guid>https://barbdev.github.io/site-perso/blog/ouverture/</guid>
+      <description>Premier post sur ce magnifique site !</description>
+    </item>
+    
+  </channel>
+</rss>
